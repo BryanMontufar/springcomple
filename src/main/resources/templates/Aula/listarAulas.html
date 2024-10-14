@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+layout:decorate="~{/generico/genericoUI}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div layout:fragment="contenidopaginas">
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="Aula: ${}">
+    	<td th:text="${Aula.nombre}"></td>  
+    </tr>
+  </tbody>
+</table>
+
+	
+</div>
+
+
+</body>
+</html>
+
